@@ -10,6 +10,9 @@ export default function TabOneScreen() {
         }}
         style={styles.image}
       />
+      <View style={styles.badgeContainer}>
+        <Text style={styles.badgeText}>4</Text>
+      </View>
       <View style={styles.rightContainer}>
         <View style={styles.row}>
           <Text style={styles.name}>Elon Musk</Text>
@@ -24,6 +27,23 @@ export default function TabOneScreen() {
 }
 
 const styles = StyleSheet.create({
+  badgeContainer: {
+    backgroundColor: "#3872E9",
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    left: 45,
+    top: 10,
+  },
+  badgeText: {
+    color: "white",
+    fontSize: 12,
+  },
   container: {
     flexDirection: "row",
     padding: 10,
