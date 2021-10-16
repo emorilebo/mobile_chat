@@ -10,12 +10,14 @@ export default function TabOneScreen() {
         }}
         style={styles.image}
       />
-      <View>
+      <View style={styles.rightContainer}>
         <View style={styles.row}>
           <Text style={styles.name}>Elon Musk</Text>
           <Text style={styles.text}>11:11 AM</Text>
         </View>
-        <Text style={styles.text}>Hola Hola from the moon</Text>
+        <Text numberOfLines={1} style={styles.text}>
+          Hola Hola from the moon
+        </Text>
       </View>
     </View>
   );
@@ -27,13 +29,19 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   image: {
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     borderRadius: 30,
     marginRight: 10,
   },
   name: {
     fontWeight: "bold",
+    fontSize: 18,
+    marginBotton: "3",
+  },
+  rightContainer: {
+    flex: 1,
+    justifyContent: "center",
   },
   row: {
     flexDirection: "row",
