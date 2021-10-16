@@ -10,16 +10,26 @@ export default function TabOneScreen() {
         }}
         style={styles.image}
       />
-      <View></View>
+      <View>
+        <View style={styles.row}>
+          <Text style={styles.name}>Elon Musk</Text>
+          <Text style={styles.text}>11:11 AM</Text>
+        </View>
+        <Text style={styles.text}>Hola Hola from the moon</Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flexDirection: "row",
+    padding: 10,
+  },
   image: {
     height: 100,
     width: 100,
+    borderRadius: 50,
   },
   text: {
     fontSize: 30,
