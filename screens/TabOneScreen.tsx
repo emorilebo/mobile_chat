@@ -27,12 +27,19 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   image: {
-    height: 100,
-    width: 100,
-    borderRadius: 50,
+    height: 60,
+    width: 60,
+    borderRadius: 30,
+    marginRight: 10,
+  },
+  name: {
+    fontWeight: "bold",
+  },
+  row: {
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   text: {
-    fontSize: 30,
-    color: "blue",
+    color: "gray",
   },
 });
